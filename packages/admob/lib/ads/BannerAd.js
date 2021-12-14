@@ -88,11 +88,11 @@ function BannerAd({ unitId, size, requestOptions, ...props }) {
 
   return (
     <ReactNativeFirebaseAdMobBannerView
-      size={size}
       style={style}
       unitId={unitId}
       request={validateAdRequestOptions(requestOptions)}
       onNativeEvent={onNativeEvent}
+      size={size}
     />
   );
 }
